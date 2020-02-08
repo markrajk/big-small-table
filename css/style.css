@@ -95,3 +95,7 @@ body {
     font-size: 1.6rem; }
     .results .choose span {
       font-weight: 700; }
+  .results .all-ppl-header h2 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: #1A173B; }

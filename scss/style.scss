@@ -151,7 +151,24 @@ body {
             font-weight: 700;
         }
     }
+
+    // ALL PEOPLE
+    & .all-ppl {
+        
+
+        &-header {
+            
+            & h2 {
+                font-size: 1.9rem;
+                font-weight: 700;
+                color: #1A173B;
+            }
+        }
+    }
 }
+
+
+
 
 
 
