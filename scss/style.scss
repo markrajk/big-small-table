@@ -177,17 +177,17 @@ body {
     & .all-ppl {
         position: relative;
         padding-top: 2.5rem;
-        height: 73vh;
+        height: 72vh;
         @include respond(desktop-xl) {
-            height: 68vh;
+            height: 67vh;
         }
 
         @include respond(desktop-lg) {
-            height: 66vh;
+            height: 65vh;
         }
 
         @include respond-h(height-sm) {
-            height: 62vh;
+            height: 61vh;
         }
         &-header {
             width: inherit;
