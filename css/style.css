@@ -166,7 +166,9 @@ body {
           border-width: 1.5px;
           border-color: rgba(0, 0, 0, 0.1);
           border-top-right-radius: 20rem;
-          border-bottom-right-radius: 20rem; }
+          border-bottom-right-radius: 20rem;
+          outline: none;
+          box-shadow: none; }
           .results .all-ppl-input .search input::placeholder {
             font-family: 'Open Sans', sans-serif;
             font-weight: 400;
