@@ -82,7 +82,7 @@ body {
   .results-header {
     height: 14rem; }
   .results-body {
-    max-height: calc(100vh - 17rem); }
+    max-height: calc(100vh - 24rem); }
   .results .logout {
     font-size: 1.5rem; }
     .results .logout a {
@@ -102,14 +102,20 @@ body {
       font-weight: 900;
       color: #1A173B; }
   .results .all-ppl {
-    padding: 2.5rem 0; }
-    .results .all-ppl-header h2 {
-      font-size: 1.9rem;
-      font-weight: 700;
-      color: #1A173B; }
-    .results .all-ppl-header .icons i {
-      font-size: 2.2rem;
-      color: #C5C7C9; }
+    position: relative;
+    padding-top: 2.5rem;
+    overflow: scroll; }
+    .results .all-ppl-header {
+      width: inherit;
+      top: 0;
+      left: 0; }
+      .results .all-ppl-header h2 {
+        font-size: 1.9rem;
+        font-weight: 700;
+        color: #1A173B; }
+      .results .all-ppl-header .icons i {
+        font-size: 2.2rem;
+        color: #C5C7C9; }
     .results .all-ppl-input {
       margin-top: 1.3rem; }
       .results .all-ppl-input .search {
@@ -140,15 +146,17 @@ body {
           border-color: #ced4da;
           font-weight: 300;
           border-radius: 2rem; }
+    .results .all-ppl .table tbody {
+      overflow: scroll; }
     .results .all-ppl .table tr {
       height: 5rem; }
     .results .all-ppl .table th {
       font-size: 1.4rem;
       font-weight: 400;
       border-bottom: 1px solid #EAEBEE;
-      padding: 2.5rem 0; }
+      padding: 2.6rem 0; }
       .results .all-ppl .table th:nth-of-type(1) {
-        padding-left: 3rem; }
+        padding-left: 3rem !important; }
     .results .all-ppl .table td {
       padding: 1rem 0;
       font-size: 1.3rem;
@@ -175,3 +183,7 @@ body {
         background: linear-gradient(#F5E144, #FFA30F); }
       .results .all-ppl .table .five .btn-custom-red {
         background: linear-gradient(#FA2020, #EF0049); }
+    .results .all-ppl-footer {
+      width: 100%;
+      min-height: 7rem;
+      background-color: red; }

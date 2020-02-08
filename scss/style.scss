@@ -130,7 +130,7 @@ body {
     }
 
     &-body {
-        max-height: calc(100vh - 17rem);
+        max-height: calc(100vh - 24rem);
         //overflow: hidden;
     }
     & .logout {
@@ -162,8 +162,13 @@ body {
 
     // ALL PEOPLE
     & .all-ppl {
-        padding: 2.5rem 0;
+        position: relative;
+        padding-top: 2.5rem;
+        overflow: scroll;
         &-header {
+            width: inherit;
+            top: 0;
+            left: 0;
             & h2 {
                 font-size: 1.9rem;
                 font-weight: 700;
@@ -218,9 +223,10 @@ body {
         }
 
         & .table {
-
+            & tbody {
+                overflow: scroll;
+            }
             & tr {
-                
                 height: 5rem;
             }
 
@@ -228,10 +234,10 @@ body {
                 font-size: 1.4rem;
                 font-weight: 400;
                 border-bottom: 1px solid #EAEBEE;
-                padding: 2.5rem 0;
+                padding: 2.6rem 0;
                
                 &:nth-of-type(1) {
-                    padding-left: 3rem;
+                    padding-left: 3rem!important;
                 }
             }
 
@@ -239,6 +245,7 @@ body {
                 padding: 1rem 0;
                 font-size: 1.3rem;
                 border-bottom: 1px solid #EAEBEE;
+                
             }
 
             & .one {
@@ -278,6 +285,15 @@ body {
                     }
                 }
             }
+        }
+        &-footer {
+            width: 100%;
+            // position: absolute;
+            // left: 0;
+            // bottom: 0;
+            min-height: 7rem;
+            background-color: red;
+            //z-index: 1000;
         }
     }
 }
