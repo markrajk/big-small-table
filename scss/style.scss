@@ -20,6 +20,12 @@ $red-gradient: linear-gradient(#FA2020, #EF0049);
     }
 }
 
+@mixin respond-h($breakpoint) {
+    @if $breakpoint == height-sm {
+        @media (max-height: 600px) { @content };
+    }
+}
+
 html {
     font-size: 62.5%;
     @include respond(desktop-xxl) {
@@ -38,6 +44,14 @@ body {
     height: 100vh;
     min-width: 24rem;
     z-index: 1000;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+
+    &::-webkit-scrollbar { 
+        display: none;  /* Safari and Chrome */
+    }
     @include respond(desktop-lg) {
         min-width: 23rem;
     }
@@ -130,8 +144,7 @@ body {
     }
 
     &-body {
-        max-height: calc(100vh - 24rem);
-        //overflow: hidden;
+        //max-height: calc(100vh - 24rem);
     }
     & .logout {
         font-size: 1.5rem;
@@ -164,7 +177,14 @@ body {
     & .all-ppl {
         position: relative;
         padding-top: 2.5rem;
-        height: 68rem;
+        height: 70vh;
+        @include respond(desktop-lg) {
+            height: 68vh;
+        }
+
+        @include respond-h(height-sm) {
+            height: 63vh;
+        }
         &-header {
             width: inherit;
             top: 0;
@@ -241,6 +261,13 @@ body {
             
             & > * {
                 width: 16.6%;
+                @include respond(desktop-lg) {
+                    width: 20%;
+                }
+
+                @include respond(desktop-md) {
+                    width: 25%;
+                }
             }
 
             &.active {
@@ -285,12 +312,24 @@ body {
         }
 
         &-footer {
+            padding: 0 3rem!important;
+            font-size: 1.4rem;
+            color: #5E636B;
             width: 100%;
             height: 6rem;
+
+            & p {
+                margin-bottom: 0;
+            }
 
             & .custom-select {
                 padding: 0;
                 width: 4rem;
+            }
+
+            & i {
+                font-size: 3rem;
+                margin-left: 0rem;
             }
         }
     }
