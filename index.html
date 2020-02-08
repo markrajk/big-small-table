@@ -88,10 +88,17 @@
 
                 
                 <div class="all-ppl-input d-flex px-5 flex-wrap">
-                    <div class="search mr-4 mb-2">
+                    <!-- <div class="search mr-4 mb-2">
                         <input class="form-control" type="text" id="search" placeholder="Search...">
                         <i class="material-icons">search</i>
-                    </div>
+                    </div> -->
+
+                    <div class="input-group mb-3 search mr-4 mb-2">
+                        <div class="input-group-prepend ">
+                          <span class="input-group-text bg-white border-right-0" id="basic-addon1"><i class="material-icons">search</i></span>
+                        </div>
+                        <input type="text" class="form-control border-left-0" placeholder="Search..." aria-label="Search..." aria-describedby="basic-addon1">
+                      </div>
 
                     <div class="teams mr-4">
                         <select>
@@ -114,7 +121,7 @@
 
                 <ul class="list-group-flush p-0 m-0 pt-2">
                     <li class="list-group-item d-flex align-items-center justify-content-between">
-                        <p class="ml-4 pl-5">Name</p>
+                        <p class="name-pad">Name</p>
                         <p class="d-none d-lg-block">Team</p>
                         <p class="d-none d-xl-block">Job title</p>
                         <p>His/her boss</p>
