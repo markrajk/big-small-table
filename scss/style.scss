@@ -164,7 +164,7 @@ body {
     & .all-ppl {
         position: relative;
         padding-top: 2.5rem;
-        overflow: scroll;
+        height: 68rem;
         &-header {
             width: inherit;
             top: 0;
@@ -223,77 +223,75 @@ body {
         }
 
         & .table {
-            & tbody {
-                overflow: scroll;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            -ms-overflow-style: none;  /* Internet Explorer 10+ */
+            scrollbar-width: none;  /* Firefox */
+
+            &::-webkit-scrollbar { 
+                display: none;  /* Safari and Chrome */
             }
-            & tr {
-                height: 5rem;
+        }
+
+        .list-group-item {
+            position: relative;
+            padding: .9rem 2.5rem;
+            font-size: 1.3rem;
+            color: #354052;
+            
+            & > * {
+                width: 16.6%;
             }
 
-            & th {
-                font-size: 1.4rem;
-                font-weight: 400;
-                border-bottom: 1px solid #EAEBEE;
-                padding: 2.6rem 0;
-               
-                &:nth-of-type(1) {
-                    padding-left: 3rem!important;
-                }
+            &.active {
+                border-color: #EAEBEE;
+                background-color: #F4FAFF;
+            }
+            & img {
+                width: 2.7rem;
+                height: 2.7rem;
             }
 
-            & td {
-                padding: 1rem 0;
+            & .name {
+                padding-left: 1.8rem;
+                font-weight: 700;
+                white-space: nowrap;
+            }
+
+            & .prof {
+
+            }
+
+            & .btn-custom {
                 font-size: 1.3rem;
-                border-bottom: 1px solid #EAEBEE;
-                
-            }
+                text-decoration: none;
+                display: inline-block;
+                width: 8rem;
+                padding: .65rem 0;
+                color: #fff;
+                font-weight: 700;
+                border-radius: 3px;
 
-            & .one {
-
-                & img {
-                    width: 2.7rem;
-                    height: 2.7rem;
-                    border-radius: 50%;
+                &-green {
+                    background: $green-gradient;
                 }
-
-                & .name {
-                    padding-left: 2rem;
-                    font-weight: 700;
+                &-orange {
+                    background: $orange-gradient;
                 }
-            }
-
-            & .five {
-
-                .btn-custom {
-                    font-size: 1.3rem;
-                    text-decoration: none;
-                    display: inline-block;
-                    width: 8rem;
-                    padding: .65rem 0;
-                    color: #fff;
-                    font-weight: 700;
-                    border-radius: 3px;
-    
-                    &-green {
-                        background: $green-gradient;
-                    }
-                    &-orange {
-                        background: $orange-gradient;
-                    }
-                    &-red {
-                        background: $red-gradient;
-                    }
+                &-red {
+                    background: $red-gradient;
                 }
             }
         }
+
         &-footer {
             width: 100%;
-            // position: absolute;
-            // left: 0;
-            // bottom: 0;
-            min-height: 7rem;
-            background-color: red;
-            //z-index: 1000;
+            height: 6rem;
+
+            & .custom-select {
+                padding: 0;
+                width: 4rem;
+            }
         }
     }
 }
