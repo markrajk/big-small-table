@@ -189,13 +189,14 @@ body {
         appearance: none;
         width: 17rem;
         height: 3.5rem;
-        padding-left: 1.8rem;
+        padding-left: 1.3rem;
         font-size: 1.4rem;
         color: #2A2B2F;
         border-width: 1.5px;
         border-color: rgba(0, 0, 0, 0.1);
         border-radius: 2rem; }
     .results .all-ppl .list-group-flush:nth-of-type(1) p {
+      font-size: 1.4rem;
       color: #5E636B; }
     .results .all-ppl .table {
       overflow-y: scroll;
