@@ -147,7 +147,7 @@ body {
     .results .all-ppl-input {
       margin-top: 1.3rem; }
       .results .all-ppl-input .search {
-        max-width: 24rem;
+        width: 26.3rem;
         position: relative; }
         .results .all-ppl-input .search .input-group-prepend span {
           min-width: 5rem;
@@ -159,9 +159,9 @@ body {
         .results .all-ppl-input .search input {
           font-family: 'Open Sans', sans-serif;
           font-weight: 400;
-          padding: 1.8rem 0;
+          height: 3.5rem;
           padding-right: 3rem;
-          font-size: 1.6rem;
+          font-size: 1.4rem;
           color: #2A2B2F;
           border-width: 1.5px;
           border-color: rgba(0, 0, 0, 0.1);
@@ -172,7 +172,7 @@ body {
           .results .all-ppl-input .search input::placeholder {
             font-family: 'Open Sans', sans-serif;
             font-weight: 400;
-            font-size: 1.6rem;
+            font-size: 1.4rem;
             color: #2A2B2F; }
         .results .all-ppl-input .search i {
           position: absolute;
@@ -187,10 +187,10 @@ body {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
-        min-width: 15rem;
-        padding: .61rem 0;
+        width: 17rem;
+        height: 3.5rem;
         padding-left: 1.8rem;
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         color: #2A2B2F;
         border-width: 1.5px;
         border-color: rgba(0, 0, 0, 0.1);
