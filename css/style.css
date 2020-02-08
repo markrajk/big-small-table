@@ -143,6 +143,8 @@ body {
         .results .all-ppl-input .search .input-group-prepend span {
           min-width: 5rem;
           color: rgba(0, 0, 0, 0.4);
+          border-width: 1.5px;
+          border-color: rgba(0, 0, 0, 0.1);
           border-top-left-radius: 20rem;
           border-bottom-left-radius: 20rem; }
         .results .all-ppl-input .search input {
@@ -150,9 +152,13 @@ body {
           padding-right: 3rem;
           font-size: 1.6rem;
           color: rgba(0, 0, 0, 0.7);
-          font-weight: 300;
+          font-weight: 400;
+          border-width: 1.5px;
+          border-color: rgba(0, 0, 0, 0.1);
           border-top-right-radius: 20rem;
           border-bottom-right-radius: 20rem; }
+          .results .all-ppl-input .search input::placeholder {
+            color: rgba(0, 0, 0, 0.7); }
         .results .all-ppl-input .search i {
           position: absolute;
           top: 53%;
@@ -169,8 +175,9 @@ body {
         padding-left: 1.8rem;
         font-size: 1.6rem;
         color: rgba(0, 0, 0, 0.7);
-        border-color: #ced4da;
-        font-weight: 300;
+        border-width: 1.5px;
+        border-color: rgba(0, 0, 0, 0.1);
+        font-weight: 400;
         border-radius: 2rem; }
     .results .all-ppl .table {
       overflow-y: scroll;
