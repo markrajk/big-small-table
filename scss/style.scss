@@ -177,7 +177,11 @@ body {
     & .all-ppl {
         position: relative;
         padding-top: 2.5rem;
-        height: 70vh;
+        height: 75vh;
+        @include respond(desktop-xl) {
+            height: 70vh;
+        }
+
         @include respond(desktop-lg) {
             height: 68vh;
         }
@@ -228,7 +232,6 @@ body {
             }
 
             & .teams, .people {
-                margin-left: 1.8rem;
                 & select {
                     min-width: 17rem;
                     min-height: 3.5rem;
@@ -260,6 +263,7 @@ body {
             color: #354052;
             
             & > * {
+                white-space: nowrap;
                 width: 16.6%;
                 @include respond(desktop-lg) {
                     width: 20%;
@@ -267,6 +271,10 @@ body {
 
                 @include respond(desktop-md) {
                     width: 25%;
+                }
+
+                @include respond(desktop-sm) {
+                    width: 30%;
                 }
             }
 
@@ -322,12 +330,15 @@ body {
                 margin-bottom: 0;
             }
 
-            & .custom-select {
+            & select {
+                color: #5E636B;
                 padding: 0;
                 width: 4rem;
+                border: none;
             }
 
             & i {
+                color: #5E636B;
                 font-size: 3rem;
                 margin-left: 0rem;
             }

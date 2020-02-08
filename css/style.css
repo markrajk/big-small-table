@@ -111,7 +111,10 @@ body {
   .results .all-ppl {
     position: relative;
     padding-top: 2.5rem;
-    height: 70vh; }
+    height: 75vh; }
+    @media (max-width: 1500px) {
+      .results .all-ppl {
+        height: 70vh; } }
     @media (max-width: 1199px) {
       .results .all-ppl {
         height: 68vh; } }
@@ -148,17 +151,15 @@ body {
           left: 1.5rem;
           color: rgba(0, 0, 0, 0.4);
           transform: translate(0, -50%); }
-      .results .all-ppl-input .teams, .results .all-ppl-input .people {
-        margin-left: 1.8rem; }
-        .results .all-ppl-input .teams select, .results .all-ppl-input .people select {
-          min-width: 17rem;
-          min-height: 3.5rem;
-          padding-left: 1.8rem;
-          font-size: 1.6rem;
-          color: rgba(0, 0, 0, 0.7);
-          border-color: #ced4da;
-          font-weight: 300;
-          border-radius: 2rem; }
+      .results .all-ppl-input .teams select, .results .all-ppl-input .people select {
+        min-width: 17rem;
+        min-height: 3.5rem;
+        padding-left: 1.8rem;
+        font-size: 1.6rem;
+        color: rgba(0, 0, 0, 0.7);
+        border-color: #ced4da;
+        font-weight: 300;
+        border-radius: 2rem; }
     .results .all-ppl .table {
       overflow-y: scroll;
       overflow-x: hidden;
@@ -175,6 +176,7 @@ body {
       font-size: 1.3rem;
       color: #354052; }
       .results .all-ppl .list-group-item > * {
+        white-space: nowrap;
         width: 16.6%; }
         @media (max-width: 1199px) {
           .results .all-ppl .list-group-item > * {
@@ -182,6 +184,9 @@ body {
         @media (max-width: 991px) {
           .results .all-ppl .list-group-item > * {
             width: 25%; } }
+        @media (max-width: 767px) {
+          .results .all-ppl .list-group-item > * {
+            width: 30%; } }
       .results .all-ppl .list-group-item.active {
         border-color: #EAEBEE;
         background-color: #F4FAFF; }
@@ -215,9 +220,12 @@ body {
       height: 6rem; }
       .results .all-ppl-footer p {
         margin-bottom: 0; }
-      .results .all-ppl-footer .custom-select {
+      .results .all-ppl-footer select {
+        color: #5E636B;
         padding: 0;
-        width: 4rem; }
+        width: 4rem;
+        border: none; }
       .results .all-ppl-footer i {
+        color: #5E636B;
         font-size: 3rem;
         margin-left: 0rem; }
