@@ -111,16 +111,16 @@ body {
   .results .all-ppl {
     position: relative;
     padding-top: 2.5rem;
-    height: 75vh; }
+    height: 73vh; }
     @media (max-width: 1500px) {
       .results .all-ppl {
-        height: 70vh; } }
+        height: 68vh; } }
     @media (max-width: 1199px) {
       .results .all-ppl {
-        height: 68vh; } }
+        height: 66vh; } }
     @media (max-height: 600px) {
       .results .all-ppl {
-        height: 63vh; } }
+        height: 62vh; } }
     .results .all-ppl-header {
       width: inherit;
       top: 0;
